@@ -19,11 +19,17 @@ while winner is False:
             print(f"Learn to read, {user_name}; it's gotta be BETWEEN 1 and 100!")
         elif guess == number:
             print(f"Whoa, {user_name}! You guessed correctly in {count} tries!")
-            winner = True
+            print("\n")
+            retry = input("Would you like to play again, and try for a better score? Y/N: ")
+                if retry == 'Y':
+                    winner = False
+                else: 
+                    winner = True
         elif guess > number:
             print("Too high, try a lower number.")
         else:
             print("Too low, guess higher!")
+
 
     
 
