@@ -1,5 +1,20 @@
 """A number-guessing game."""
+import random
 
-# Put your code here
 user_name = input("What is your name?")
 print(f"Hello, {user_name}! We're going to play a guessing game!")
+print("\n")
+
+number = random.randint(1, 101)
+count = 0
+winner = False
+while winner is False:
+    print("Need a number")
+    guess = int(input("Pick a number between 1 & 100: "))
+    count += 1
+      #  if guess == number:
+       #     print(f"Whoa, {user_name}! You guessed correctly in {count} tries!")
+       # else:
+       #     print("Try again!")
+    
+
