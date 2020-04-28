@@ -16,7 +16,11 @@ while winner is False:
         print(f"Hello? {user_name}? We're asking for a NUMBER here.")
     else:        
         count += 1
-        if guess > 100 or guess < 1:
+        if count == 5:
+            print(f"Sorry, {user_name}, you didn't guess fast enough. Better luck next time!")
+            winner = True
+        
+        elif guess > 100 or guess < 1:
             print(f"Learn to read, {user_name}; it's gotta be BETWEEN 1 and 100!")
         
         elif guess == number:
